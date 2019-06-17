@@ -1,0 +1,535 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*
+body{
+    overflow-x: hidden;
+}
+*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.menu{
+    font-size:25px;
+    cursor:pointer;
+    color: white;
+}
+
+nav{
+    background-color:transparent;
+    width: 100%;
+}
+/*
+.fa-envelope, .fa-phone{
+    color: black;
+}
+*/
+.a{
+    font-size:35px;
+/*    margin-top: 30vh;*/
+    text-shadow:2px 2px 10px  lightgrey; 
+    text-align: center;
+    padding-top: 30vh;
+}
+.head{
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    text-shadow:2px 2px 20px  white; 
+
+}
+.intro{
+        font-size: 30px;
+        line-height: 80px;
+        color: white;
+        padding-top: 20px;
+    }
+.backroundimg{
+    background-image: url(pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    background-attachment: fixed;
+}
+.about{
+  text-shadow:3px 3px lightgrey;
+    font-size: 40px;
+/*    color: linear-gradient(to right, skyblue ,pink);*/
+
+/*
+    background: -webkit-linear-gradient(pink, skyblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+}
+.abtbelowspace{
+    margin-top:70px;
+}
+.details{
+    width:355px;
+}
+.b{
+    text-shadow:2.5px 2.5px 5px lightgrey;  
+    font-size:28px;
+
+}
+.c{
+    text-shadow:1px 1px lightgrey;  
+}
+.downloadbottom{
+    margin-top: 45px;
+}
+.savundharya{
+    margin-left: 180px;
+    height: 400px;
+    width: 300px;
+    background-color: lightgray;
+}
+.skillimg{
+    background: url(pic1.jpg);
+    background-attachment: fixed;
+     background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+.skill-space{
+    margin-top: 50px;
+}
+.progressbar-space{
+    margin-top: 40px;
+}
+#skill{
+    margin-top: 30px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 40px 40px;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.social{
+    text-align: center;
+    
+}
+.socialicon{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid white;
+    display: inline-block;
+    border-radius: 50px;
+    
+}
+.socialicon:hover{
+    background: white;
+    color: black;
+    text-decoration: none;
+    transition: ease-in 0.5s;
+}
+
+.fa{
+    color: white;
+    text-decoration: none;
+    transition: ease-out 0.5s;
+}
+.fa-envelope, .fa-phone{
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 235px;
+}
+.footer-content{
+    margin-top: 25px;
+}
+.icons{
+        margin-left: 500px;
+    }
+.contact-size{
+    font-size: 25px;
+    text-shadow:1px 1px whitesmoke;  
+    
+}
+.skillcolor{
+    color: white;
+}
+
+
+
+
+@media (max-width:1200px) and (min-width: 992px){
+   
+
+  
+}
+
+@media (max-width:991px) and (min-width: 768px){
+
+ 
+
+}
+
+@media (max-width:767px) and (min-width: 551px){
+
+  
+}
+
+@media (max-width: 550px) and (min-width: 352px){
+    
+    body{
+        width: 352px;
+    }
+    .backroundimg{
+        width: 352px;
+        height: 600px;
+    }
+    .abt-width{
+        width: 550px;
+    }
+    
+    .intro{
+        margin-top: -40px;
+        font-size:30px;
+        line-height: 70px;
+        
+    }
+    .about-me-content{
+        text-align:justify;
+/*        font-family: 'Poppins';*/
+/*        font-size: 10px;*/
+    }
+    .abtbelowspace{
+        width: 345px;
+        
+    }
+    .b{
+        text-align: center;
+    }
+    .savundharya{
+        margin-left: 25px;
+        margin-top: 50px;
+        height: 300px;
+        width: 350px;
+    } 
+    .downloadbottom{
+        width: 100%;
+    }
+    .progressbar-space{
+        height: 30px;
+    }
+    .skillimg{
+        width: 350px;
+        height: 650px;
+        
+    }
+    .timeline{
+        margin-left: -5px;
+    }
+    footer{
+        width:auto;
+    }
+    .social{
+        margin-left: -40px;
+    } 
+     
+  
+}
+/*media queries*/
+/*
+@media (max-width:1200px) and (min-width: 992px){
+    body{
+        width:1060px;
+    }
+
+  
+}
+
+@media (max-width:991px) and (min-width: 768px){
+
+ 
+
+}
+
+@media (max-width:767px) and (min-width: 551px){
+    
+.backroundimg{
+        width:  550px;
+        height: 500px;
+    }
+    .abt-width{
+        width: 100%;
+    }
+    .head{
+        font-size:15px;
+        padding-bottom: 100px;
+        margin-top: -60px;
+        
+    }
+    .intro{
+        margin-top: -100px;
+        font-size: 5px;
+        line-height: 50px;
+        
+    }
+    .about-me-content{
+        text-align:justify;
+        font-family: 'Poppins';
+        font-size: 20px;
+    }
+    .abtbelowspace{
+        width: 100%;
+        
+    }
+    .b{
+        text-align: center;
+    }
+    .savundharya{
+        margin-left: 25px;
+        margin-top: 50px;
+        height: 300px;
+        width: 80%;
+    } 
+    .downloadbottom{
+        width: 100%;
+    }
+    .progressbar-space{
+        height: 30px;
+    }
+    .skillimg{
+        width: 375px;
+        height: 650px;
+        
+    }
+    .education{
+        width: 375px;
+    }
+    .timeline{
+        margin-right: 5px;
+    
+    }
+    footer{
+        width:375px;
+    }
+    .social{
+        margin-left: -120px;
+    }
+     
+  
+}
+  
+}
+*/
+
+@media (max-width: 550px) and (min-width: 352px){
+    body{
+        width: 100%;
+    }
+    .backroundimg{
+        width: 550px;
+        height: 700px;
+    }
+    .abt-width{
+        width: 550px;
+    }
+    
+    .intro{
+        margin-top: -40px;
+        font-size:30px;
+        line-height: 70px;
+        
+    }
+    .about-me-content{
+        text-align:justify;
+/*        font-family: 'Poppins';*/
+/*        font-size: 10px;*/
+    }
+    .abtbelowspace{
+        width: 550px;
+        
+    }
+    .b{
+        text-align: center;
+    }
+    .savundharya{
+        margin-left: 90px;
+        margin-top: 50px;
+        height: 400px;
+        width: 300px;
+    } 
+    .downloadbottom{
+        width: 70%;
+        margin-left:70px;
+    }
+    .progressbar-space{
+        height: 30px;
+    }
+    .skillimg{
+        width: 550px;
+        height: 650px;
+        
+    }
+    .timeline{
+        margin-left: -5px;
+    }
+    footer{
+        width:550px;
+    }
+    .social{
+        margin-left: -40px;
+    } 
+     
+  
+     
+  
+}
+
+@media (max-width: 351px) {
+    
+
+    
+    .backroundimg{
+        width: 100%;
+        height: 500px;
+    }
+    .abt-width{
+        width: 100%;
+    }
+    .head{
+        font-size:20px;
+        padding-bottom: 100px;
+        margin-top: -60px;
+        
+    }
+    .intro{
+        margin-top: -100px;
+        font-size: 17px;
+        line-height: 50px;
+        
+    }
+    .about-me-content{
+        text-align:justify;
+        font-family: 'Poppins';
+        font-size: 20px;
+    }
+    .abtbelowspace{
+        width: 100%;
+        
+    }
+/*
+    .b{
+        text-align: center;
+    }
+*/
+    .savundharya{
+        margin-left: 25px;
+        margin-top: 50px;
+        height: 300px;
+        width: 90%;
+    } 
+    .downloadbottom{
+        width: 100%;
+    }
+    .progressbar-space{
+        height: 30px;
+    }
+    .skillimg{
+        width: 100%;
+        height: 650px;
+        
+    }
+    .education{
+        width: 100%;
+    }
+    .timeline{
+        margin-right: 5px;
+    
+    }
+    footer{
+        width:auto;
+    }
+    .social{
+        margin-left: -140px;
+    }
+
+    
+    
+}
+
+
